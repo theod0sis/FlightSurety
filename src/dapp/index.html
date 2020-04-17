@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">FlightSurety</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<main class="container">
+
+    <div id="display-wrapper" class="top-20">
+    </div>
+    <form class="form-inline mb-2">
+        <div id="add-airline">
+            <h3>Add Airline</h3>
+            <div class="row top-20">
+                <label class="form">Airline Id:</label> <input type="text" id="airlineId">
+                <label class="form">Availabe Airline Address to add:</label>
+                <select class="form-control" id="availableAirlineAddress">
+                </select>
+            </div>
+            <div class="row top-20">
+                <label class="form">Airline Name:</label> <input type="text" id="airlineName">
+                <label class="form">Register with</label>
+                <select class="form-control" id="airlineToRegister">
+                </select>
+            </div>
+            <div class="row top-20">
+                <btn class="btn btn-primary" id="registerAirline">Add Airline</btn>
+            </div>
+        </div>
+    </form>
+    <form class="form-inline mb-2">
+        <div id="add-flight">
+            <h3>Add Flight</h3>
+            <div class="row top-20">
+                <label class="form">Flight Id :</label> <input type="text" id="flightId">
+                <label class="form">Airline Address:</label>
+                <select class="form-control" id="flightAirline">
+                </select>
+            </div>
+            <div class="row top-20">
+                <label class="form">Time in Epoch:</label> <input type="text" id="flightTime">
+            </div>
+            <div class="row top-20">
+                <btn class="btn btn-primary" id="addFlight">Add Flight</btn>
+            </div>
+        </div>
+    </form>
+    <form class="form-inline mb-2">
+        <div id="add-insurance">
+            <h3>Passenger Insurance</h3>
+            <div class="row top-20">
+                <label class="form">Passenger Address:</label>
+                <select class="form-control" id="passengerAddress">
+                </select>
+                <label class="form">Amount :</label> <input type="text" id="insuranceAmount">
+            </div>
+            <div class="row top-20">
+                <label class="form">Flight id :</label> <input type="text" id="insuranceFlightId">
+            </div>
+            <div class="row top-20">
+                <label class="form">Airline Address:</label>
+                <select class="form-control" id="airlineOfFlight">
+                </select>
+                <label class="form">Time in Epoch:</label> <input type="text" id="timeOfFlight">
+            </div>
+            <div class="row top-20">
+                <btn class="btn btn-primary" id="buy-Insurance">Buy Insurance</btn>
+            </div>
+        </div>
+    </form>
+    <div class="row top-20">
+        <label class="form">Flight</label> <input type="text" id="flight-number">
+        <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+    </div>
+</main>
+
+</body>
+
+</html>
